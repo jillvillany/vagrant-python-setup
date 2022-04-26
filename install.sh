@@ -25,6 +25,18 @@ curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poet
 # activate poetry (since didn't restart bash)
 source $HOME/.poetry/env
 
+# terminal formating
+echo "source ~/.bash_prompt" >> ~/.bashrc
+sudo ln -s /vagrant/.bash_prompt ~/.bash_prompt
+
+# automatically cd to /vagrant folder when vagrant ssh
+echo "cd /vagrant" >> ~/.bashrc
+
+# activate .bashrc updates
+# the terminal prompt will be: vagrant vagrant * {git branch} >> 
+# when you first vagrant ssh the 1st vagrant is the user, the second vagrant is the synced folder
+source ~/.bashrc
+
 # Install project dependencies
 cd /vagrant
 poetry env use python3.8
