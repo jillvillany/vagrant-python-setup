@@ -1,11 +1,11 @@
 [tool.poetry]
-name = "vagrant-test"
+name = "vagrant-python-setup"
 version = "0.1.0"
-description = ""
+description = "This repo is intended to demonstrate an ideal Vagrant VM configuration for Python development"
 readme = "README.md"
-repository = ""
+repository = "https://github.com/jillvillany/vagrant-python-setup"
 authors = [
-    "Jill Villany <jillian.villany@ibm.com>"
+    "Jill Villany <jillvillany@gmail.com>"
 ]
 
 [tool.poetry.dependencies]
